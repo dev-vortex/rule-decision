@@ -1,3 +1,27 @@
+<p align="center">
+    <a href="https://travis-ci.com/github/dev-vortex/rule-decision"><img src="https://badgen.net/travis/dev-vortex/rule-decision?icon=travis&label=build"/></a>
+    <a href="https://www.npmjs.com/package/@dev-vortex/rule-decision"><img src="https://badgen.net/npm/v/@dev-vortex/rule-decision?icon=npm&label"/></a>
+    <a href="https://www.npmjs.com/package/@dev-vortex/rule-decision"><img src="https://badgen.net/npm/license/@dev-vortex/rule-decision?icon=npm"/></a> 
+    <a href="https://www.npmjs.com/package/@dev-vortex/rule-decision"><img src="https://badgen.net/npm/types/@dev-vortex/rule-decision?icon=typescript"/></a> 
+</p>
+
+<p align="center">
+    <a href="https://bundlephobia.com/result?p=@dev-vortex/rule-decision"><img src="https://badgen.net/bundlephobia/min/@dev-vortex/rule-decision?label=min"/></a> 
+    <a href="https://bundlephobia.com/result?p=@dev-vortex/rule-decision"><img src="https://badgen.net/bundlephobia/minzip/@dev-vortex/rule-decision?label=min+gz"/></a> 
+    <a href="https://lgtm.com/projects/g/dev-vortex/rule-decision/alerts/"><img src="https://badgen.net/lgtm/grade/g/dev-vortex/rule-decision?icon=lgtm&label=quality"/></a> 
+
+</p>
+
+<p align="center">
+    <a href="https://codeclimate.com/github/dev-vortex/rule-decision/maintainability"><img src="https://api.codeclimate.com/v1/badges/a863c129e4f1c747c941/maintainability"/></a>
+    <a href="https://codeclimate.com/github/dev-vortex/rule-decision/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a863c129e4f1c747c941/test_coverage"/></a>
+</p>
+
+<p align="center">
+    <a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg"/></a>
+    <a href="https://www.conventionalcommits.org/"><img src="https://img.shields.io/badge/conventional-commits-pink"/></a>
+</p>
+
 # Rule Decision Library
 This library aims to provide an agnostic and reliable mechanism to decide the applicable value based on defined rules given at a specific moment.
 
