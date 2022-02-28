@@ -32,22 +32,11 @@
         "release": "semantic-release",
         "semantic-release": "semantic-release"
     },
-    "dependencies": {
-        "chalk": "^5.0.0",
-        "github-username": "^7.0.0",
-        "inquirer": "^8.2.0",
-        "meow": "^9.0.0",
-        "replace-in-file": "^6.3.2",
-        "update-notifier": "^5.1.0",
-        "validate-npm-package-name": "^3.0.0"
-    },
+    "dependencies": {},
     "devDependencies": {
         "@types/chai": "^4.2.21",
-        "@types/inquirer": "^8.2.0",
         "@types/mocha": "^9.1.0",
         "@types/node": "^16.4.0",
-        "@types/update-notifier": "^5.1.0",
-        "@types/validate-npm-package-name": "^3.0.0",
         "@typescript-eslint/eslint-plugin": "^4.25.0",
         "@typescript-eslint/parser": "^4.25.0",
         "chai": "^4.3.4",
