@@ -4,6 +4,7 @@ import {
     RuleCase,
     RuleValidation,
 } from '~/types'
+export type { RuleCasesCollection, ValidatorSet }
 
 const checkValidation = (
     validation: RuleValidation,
