@@ -21,24 +21,23 @@ const checkValidation = (
     return result
 }
 
+const isRuleActive = (rule: RuleCase) => rule.active !== false
+
 const checkRule = (rule: RuleCase, validators: ValidatorSet): any => {
-    if (rule.active === false) {
-        return false
-    }
-    if (checkValidation(rule.validation, validators) === false) {
-        return false
-    }
-    if (rule.cases) {
-        const childResult = checkRules(rule.cases, validators)
-        return childResult === false && rule.resolve
-            ? rule.resolve
-            : childResult
-    } else {
-        if (rule.resolve) {
-            return rule.resolve
+    if (isRuleActive(rule) && checkValidation(rule.validation, validators)) {
+        let toReturn = true
+        if (rule.cases) {
+            const childResult = checkRules(rule.cases, validators)
+            toReturn =
+                childResult === false && rule.resolve
+                    ? rule.resolve
+                    : childResult
+        } else if (rule.resolve) {
+            toReturn = rule.resolve
         }
+        return toReturn
     }
-    return true
+    return false
 }
 
 const checkRules = (rules: RuleCasesCollection, validators: ValidatorSet) => {
