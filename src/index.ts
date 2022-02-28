@@ -25,17 +25,10 @@ const isRuleActive = (rule: RuleCase) => rule.active !== false
 
 const checkRule = (rule: RuleCase, validators: ValidatorSet): any => {
     if (isRuleActive(rule) && checkValidation(rule.validation, validators)) {
-        let toReturn = true
-        if (rule.cases) {
-            const childResult = checkRules(rule.cases, validators)
-            toReturn =
-                childResult === false && rule.resolve
-                    ? rule.resolve
-                    : childResult
-        } else if (rule.resolve) {
-            toReturn = rule.resolve
-        }
-        return toReturn
+        const childResult = rule.cases
+            ? checkRules(rule.cases, validators)
+            : false
+        return childResult || rule.resolve || true
     }
     return false
 }
