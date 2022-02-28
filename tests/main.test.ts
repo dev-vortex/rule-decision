@@ -1,6 +1,5 @@
 import { expect } from 'chai'
-import { RuleCasesCollection, ValidatorSet } from '../src/types'
-import { decideOn } from '../src'
+import { decideOn, RuleCasesCollection, ValidatorSet } from '../src'
 
 const getValidators = (values: Record<string, any>): ValidatorSet => ({
     currentMarket: () => values.market || undefined,
